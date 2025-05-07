@@ -32,7 +32,7 @@
             font-weight: bold;
         }
          ul, ol {
-            margin-top: 0;
+            margin-top: 5px; /* Added some margin */
             margin-bottom: 10px;
             padding-left: 20px;
         }
@@ -43,6 +43,14 @@
         em { /* Style for facilitator's notes */
             font-style: italic;
             color: #555;
+        }
+         /* Ensure list styling within Action column is consistent */
+         .content td ul, .content td ol {
+            padding-left: 20px;
+            margin-top: 5px;
+        }
+         .content td li {
+            margin-bottom: 3px; /* Slightly tighter list spacing */
         }
     </style>
     <script>
@@ -76,7 +84,7 @@
              <div class="banner" onclick="toggleContent('activity_0_content')">
                 📝 Resumen de Sesión
             </div>
-            <div id="activity_0_content" class="content"> <!-- Start hidden -->
+            <div id="activity_0_content" class="content">
                 <table>
                     <tr>
                         <td style="width: 50%; padding: 10px; border-right: 1px solid #ddd;">
@@ -84,7 +92,7 @@
                             <ul>
                                 <li>Realizar una última verificación funcional completa del prototipo.</li>
                                 <li>Asegurar que el proyecto esté guardado correctamente con un nombre claro.</li>
-                                <li>Preparar el proyecto para la entrega final al profesor (sin presentación formal en clase).</li>
+                                <li>Preparar el proyecto para la entrega final al profesor.</li>
                                 <li>Celebrar la finalización del prototipo rápido.</li>
                             </ul>
                             <br>
@@ -94,7 +102,7 @@
                             <strong>🔑 Entregable Clave:</strong>
                             <ul>
                                 <li>Prototipo rápido funcional y verificado, guardado definitivamente con nombre claro.</li>
-                                <li>Proyecto "entregado" según las indicaciones del profesor (ej. tablets en lugar designado).</li>
+                                <li>Proyecto "entregado" según las indicaciones del profesor.</li>
                             </ul>
                             <br>
                             <strong>🛠️ Materiales Específicos:</strong>
@@ -107,7 +115,7 @@
                             <ol>
                                 <li>Asegurarse de que los proyectos de la S3 estén accesibles.</li>
                                 <li>Actualizar el tablero Kanban con las nuevas tarjetas finales.</li>
-                                <li>Tener claro el procedimiento de "entrega" (cómo y dónde dejarán los dispositivos/proyectos los alumnos).</li>
+                                <li>Tener claro el procedimiento de "entrega".</li>
                                 <li>Tener listas las diapositivas propuestas para S4.</li>
                             </ol>
                         </td>
@@ -131,10 +139,10 @@
                     </tr>
                     <tr>
                         <td>
-                            <strong>Paso 1: (2 min) Bienvenida y Contexto Final</strong>
+                            <strong>Paso 1: Bienvenida y Contexto Final</strong>
                             <ul>
-                                <li>Proyectar <strong>Diapositiva 1</strong> (Título: Sesión 4: ¡Entrega Final del Prototipo Rápido! Contenido: Imagen de una línea de meta, un paquete regalo o un trofeo, con personajes de Scratch Jr celebrando).</li>
-                                <li>Saludar y anunciar que es la última sesión del Prototipo Rápido.</li>
+                                <li>Proyectar <strong>Diapositiva 1</strong>. <em>Título:</em> Sesión 4: ¡Entrega Final del Prototipo Rápido!</li>
+                                <li>Saludar y anunciar que es la última sesión.</li>
                             </ul>
                         </td>
                         <td>
@@ -145,11 +153,11 @@
                     </tr>
                     <tr>
                         <td>
-                            <strong>Paso 2: (3 min) Explicar Meta de Hoy</strong>
+                            <strong>Paso 2: Explicar Meta de Hoy</strong>
                             <ul>
-                                <li>Proyectar <strong>Diapositiva 2</strong> (Título: Meta de Hoy: ¡Listo para el Profe! Contenido: Lista simple: 1. Probar TODO junto. 2. Nombre claro y Guardar Final. 3. Dejar listo para revisión.).</li>
-                                <li>Explicar el objetivo: asegurarse de que todo funciona perfectamente y prepararlo para que el profesor lo revise después de clase.</li>
-                                <li>Mostrar las últimas tarjetas en el Kanban ("Verificación Funcional Final", "Guardar Proyecto Final", "Preparar Entrega").</li>
+                                <li>Proyectar <strong>Diapositiva 2</strong>. <em>Título:</em> Meta de Hoy: ¡Listo para el Profe!</li>
+                                <li>Explicar el objetivo: probar, guardar y preparar para revisión.</li>
+                                <li>Mostrar las últimas tarjetas en el Kanban.</li>
                             </ul>
                         </td>
                         <td>
@@ -179,20 +187,20 @@
                     </tr>
                     <tr>
                         <td>
-                            <strong>Paso 1: (15 min) Prueba Funcional Final en Equipo</strong>
+                            <strong>Paso 1: Prueba Funcional Final en Equipo</strong>
                             <ul>
-                                <li>Proyectar <strong>Diapositiva 3</strong> (Título: ¡Prueba Final en Equipo! Contenido: Iconos de los 3 roles trabajando juntos + Lista de verificación final: ¿Clic Héroe OK?, ¿Clic Villano OK?, ¿Escenas OK?, ¿Todo se ve bien?).</li>
-                                <li>Instruir a TODO el equipo para que juntos realicen una prueba completa del flujo:
+                                <li>Proyectar <strong>Diapositiva 3</strong>. <em>Título:</em> ¡Prueba Final en Equipo!</li>
+                                <li>Instruir a TODO el equipo para realizar una prueba completa del flujo:
                                     <ul>
-                                        <li>Abrir el proyecto.</li>
-                                        <li>Probar clic en Héroe -> verificar Escena Mejor.</li>
+                                        <li>Abrir proyecto.</li>
+                                        <li>Probar clic Héroe -> verificar Escena Mejor.</li>
                                         <li>Reiniciar.</li>
-                                        <li>Probar clic en Villano -> verificar Escena Peor.</li>
-                                        <li>Confirmar que todo se ve y funciona como esperan.</li>
+                                        <li>Probar clic Villano -> verificar Escena Peor.</li>
+                                        <li>Confirmar que todo funciona como esperan.</li>
                                     </ul>
                                 </li>
                                 <li>Roles colaboran: Probador/a guía, Constructor/a opera, Diseñador/a confirma visualmente.</li>
-                                <li>Si se encuentra algún error MÍNIMO de último momento, intentar corregirlo rápidamente.</li>
+                                <li>Si se encuentra error MÍNIMO, intentar corregirlo rápido.</li>
                                 <li>Mover tarjeta "Verificación Funcional Final" a "Haciendo".</li>
                             </ul>
                         </td>
@@ -214,13 +222,13 @@
                     </tr>
                     <tr>
                         <td>
-                            <strong>Paso 2: (10 min) Nombre Claro y Guardado Definitivo</strong>
+                            <strong>Paso 2: Nombre Claro y Guardado Definitivo</strong>
                             <ul>
-                               <li>Una vez verificado, guiar al Constructor/a (con ayuda del profe si es necesario) para asegurar el nombre final del proyecto.</li>
-                               <li>Proyectar <strong>Diapositiva 4</strong> (Título: ¡Nombre Final y Guardado Seguro! Contenido: Campo de nombre de archivo resaltado, ejemplo "EquipoRojo_AguaLimpia", icono grande de Guardar con un candado 💾🔒).</li>
-                               <li>Revisar el nombre (Ej: "EquipoRojo_AguaLimpia"). Debe ser claro y consistente.</li>
-                               <li>Realizar el GUARDADO FINAL y DEFINITIVO del proyecto. Enfatizar que no se deben hacer más cambios después de esto.</li>
-                               <li>Diseñador/a y Probador/a dan el visto bueno final.</li>
+                               <li>Guiar al Constructor/a para asegurar el nombre final del proyecto.</li>
+                               <li>Proyectar <strong>Diapositiva 4</strong>. <em>Título:</em> ¡Nombre Final y Guardado Seguro!</li>
+                               <li>Revisar el nombre (Ej: "EquipoRojo_AguaLimpia").</li>
+                               <li>Realizar el GUARDADO FINAL.</li>
+                               <li>Diseñador/a y Probador/a dan visto bueno final.</li>
                                <li>Mover tarjetas "Verificación Funcional Final" y "Guardar Proyecto Final" a "¡Listo!".</li>
                             </ul>
                         </td>
@@ -229,7 +237,7 @@
                             <br><br>
                             "Ahora, el paso SÚPER importante antes de terminar." <em>(Señalar Diapositiva 4).</em> "🛠️ Constructor/a, con mi ayuda si la necesitas, vamos a revisar el nombre del proyecto. ¿Es claro? ¿Dice el nombre de su equipo y su misión? Por ejemplo: 'EquipoAzul_BosqueFeliz'."
                             <br><br>
-                            "Una vez que el nombre esté bien... ¡Guardamos el proyecto por ÚLTIMA VEZ! ¡Este es el guardado final, ya no haremos más cambios!" <em>(Guiar el proceso de guardado, asegurando que se haga correctamente).</em>
+                            "Una vez que el nombre esté bien... ¡Guardamos el proyecto por ÚLTIMA VEZ! ¡Este es el guardado final, ya no haremos más cambios!" <em>(Guiar el proceso de guardado).</em>
                             <br><br>
                             "🎨 Diseñador/a, 👍 Probador/a: ¿Están de acuerdo? ¿Es la versión final?" <em>(Esperar confirmación).</em>
                             <br><br>
@@ -238,10 +246,9 @@
                     </tr>
                      <tr>
                         <td>
-                            <strong>Paso 3: (5 min) Preparar para la Entrega (según procedimiento)</strong>
+                            <strong>Paso 3: Preparar para la Entrega</strong>
                             <ul>
-                               <li>Explicar CLARAMENTE cómo se realizará la "entrega" (no es una presentación).</li>
-                               <li>Ejemplo: "Dejen las tablets cerradas en la mesa del frente", "Asegúrense de que el proyecto con el nombre final esté visible al abrir Scratch Jr", etc.</li>
+                               <li>Explicar CLARAMENTE el procedimiento de "entrega".</li>
                                <li>Guiar a los equipos para que dejen sus dispositivos/proyectos según las instrucciones.</li>
                                <li>Mover tarjeta "Preparar Entrega" a "¡Listo!".</li>
                             </ul>
@@ -249,7 +256,7 @@
                         <td>
                             "¡Muy bien! Ahora que está guardado y listo, vamos a prepararlo para que yo lo pueda revisar más tarde."
                             <br><br>
-                            "El proceso es muy simple:" <em>(Explicar CLARAMENTE el procedimiento específico definido, por ejemplo:</em> "Simplemente cierren Scratch Jr. con cuidado y dejen la tablet apagada sobre esta mesa designada. Asegúrense de que no se borre nada. Yo las recogeré y veré sus proyectos." <em>O bien:</em> "Asegúrense de que al abrir Scratch Jr. se vea su proyecto con el nombre final. Luego, cierren la tapa del portátil y déjenlo en su sitio.")
+                            "El proceso es muy simple:" <em>(Explicar CLARAMENTE el procedimiento específico definido).</em>
                             <br><br>
                             "¡Sigan las instrucciones con cuidado!"
                             <br><br>
@@ -273,15 +280,15 @@
                     </tr>
                     <tr>
                         <td>
-                            <strong>Paso 1: (5 min) Celebración y Reconocimiento</strong>
+                            <strong>Paso 1: Celebración y Reconocimiento</strong>
                             <ul>
-                               <li>Proyectar <strong>Diapositiva 5</strong> (Título: ¡MISIÓN CUMPLIDA, HÉROES! Contenido: Imagen grande de celebración, confeti, medallas, personajes de Scratch Jr festejando).</li>
+                               <li>Proyectar <strong>Diapositiva 5</strong>. <em>Título:</em> ¡MISIÓN CUMPLIDA, HÉROES!</li>
                                <li>Reunir a los estudiantes.</li>
-                               <li>Felicitar efusivamente a todos los equipos por completar el Prototipo Rápido.</li>
-                               <li>Destacar el proceso: desde la idea en papel hasta la aventura interactiva.</li>
-                               <li>Reconocer su esfuerzo, creatividad y trabajo en equipo.</li>
-                               <li>Realizar un gesto de celebración (aplauso, choque de manos virtual/real, etc.).</li>
-                               <li>Mencionar brevemente que se revisarán los proyectos y se dará feedback si aplica.</li>
+                               <li>Felicitar efusivamente por completar el Prototipo Rápido.</li>
+                               <li>Destacar el proceso.</li>
+                               <li>Reconocer esfuerzo, creatividad y trabajo en equipo.</li>
+                               <li>Realizar gesto de celebración.</li>
+                               <li>Mencionar brevemente la revisión posterior.</li>
                             </ul>
                         </td>
                         <td>
